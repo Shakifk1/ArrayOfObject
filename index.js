@@ -85,17 +85,27 @@ studentRecords.forEach(element=>{
 console.log(graceMarks)
 
 // Question 8 solution
+function student(a,b,c){
+    this.name = a,
+    this.class = b,
+    this.rollno = c
+}
+const stuArr=[]
 
-const students =[
-    {rollno:1,name:'jhon',class:12},
-    {rollno:2,name:'sown',class:12},
-    {rollno:3,name:'wick',class:12},
-    {rollno:4,name:'trixi',class:12},
-    {rollno:5,name:'taylor',class:12},
-    {rollno:6,name:'selena',class:12}
-]
+let student1 = new student(1,'jhon',12)
+let student2 = new student(2,'sown',12)
+let student3 = new student(3,'wick',12)
+let student4 = new student(4,'trixi',12)
+let student5 = new student(5,'taylor',12)
+let student6 = new student(6,'selena',12)
+stuArr.push(student1)
+stuArr.push(student2)
+stuArr.push(student3)
+stuArr.push(student4)
+stuArr.push(student5)
+stuArr.push(student6)
 
-console.log(students)
+console.log(stuArr);
 
 
 
